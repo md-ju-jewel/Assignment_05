@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency Service</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <style>
     body {
       font-family: "Hind Madurai", sans-serif;
     }
   </style>
-</head>
   <body class="bg-[#F5FFF6] leading-tight">
-
-    <!-- Navbar Section -->    
+    <!-- Navbar Section -->
     <nav class="px-4 lg:px-12 py-4 flex justify-between bg-white">
       <div class="flex items-center">
         <img src="./assets/logo.png" class="w-10 h-10" />
@@ -32,23 +31,24 @@
         <div
           class="flex gap-1 bg-[#ddffe5] px-3 lg:px-4 rounded-full items-center"
         >
-          <p  class="font-bold lg:text-base text-[12px]">0</p>
+          <p id="heart-count" class="font-bold lg:text-base text-[12px]">0</p>
           <img src="./assets/heart.png" class="h-3 w-3 lg:h-5 lg:w-5" />
         </div>
         <div
           class="flex gap-1 bg-[#ddffe5] px-3 lg:px-4 rounded-full items-center"
         >
-          <p class="font-bold lg:text-base text-[12px]">100</p>
+          <p id="coin" class="font-bold lg:text-base text-[12px]">100</p>
           <img src="./assets/coin.png" class="h-3 w-3 lg:h-5 lg:w-5" />
         </div>
         <div
           class="flex gap-1 bg-[#00A63E] px-3 lg:px-4 rounded-full items-center text-white"
         >
-          <p class="font-medium lg:text-base text-[12px]">0</p>
+          <p id="copy-count" class="font-medium lg:text-base text-[12px]">0</p>
           <p class="font-medium lg:text-base text-[12px]">Copy</p>
         </div>
       </div>
     </nav>
+
     <!-- Banner Section -->
     <section
       class="text-center flex flex-col justify-center items-center w-full py-4 px-1 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
@@ -62,6 +62,7 @@
         Government of the People’s Republic of Bangladesh
       </p>
     </section>
+
     <main
       class="mx-4 mb-20 lg:mx-12 mt-4 lg:grid flex flex-col gap-2 lg:grid-cols-[73%_25.2%] justify-between"
     >
@@ -69,7 +70,7 @@
         class="flex flex-col lg:gap-6 gap-2 lg:grid lg:grid-cols-3 order-2 lg:order-1"
       >
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
@@ -89,7 +90,7 @@
             </button>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               National Emergency Number
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">
@@ -97,7 +98,7 @@
             </p>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               999
             </h1>
             <p
@@ -108,7 +109,7 @@
           </div>
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -117,7 +118,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -125,15 +126,16 @@
             </button>
           </div>
         </div>
+
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#DFEFFF] p-3 rounded-xl">
               <img src="./assets/police.png" class="h-6 w-6" />
             </div>
-            <button class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,14 +147,15 @@
               </svg>
             </button>
           </div>
+
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Police Helpline Number
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">Police</p>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               999
             </h1>
             <p
@@ -161,9 +164,10 @@
               Police
             </p>
           </div>
+
           <div class="flex gap-2">
             <button
-             
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -172,7 +176,7 @@
               </p>
             </button>
             <button
-             
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -181,14 +185,14 @@
           </div>
         </div>
         <div
-         
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#FFE3E2] p-3 rounded-xl">
               <img src="./assets/fire-service.png" class="h-6 w-6" />
             </div>
-            <button  class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,13 +204,18 @@
               </svg>
             </button>
           </div>
-          <div class="font-bold text-[16px] lg:text-[20px]">
+
+
+          <div>
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Fire Service Number
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">
               Fire Service
             </p>
           </div>
+
+
           <div>
             <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               999
@@ -217,9 +226,11 @@
               Fire
             </p>
           </div>
+
+
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -228,7 +239,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -236,15 +247,16 @@
             </button>
           </div>
         </div>
+
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#FFE3E2] p-3 rounded-xl">
               <img src="./assets/ambulance.png" class="h-6 w-6" />
             </div>
-            <button  class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -256,14 +268,15 @@
               </svg>
             </button>
           </div>
+
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Ambulance Service
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">Ambulance</p>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               1994-999999
             </h1>
             <p
@@ -274,7 +287,7 @@
           </div>
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -282,9 +295,8 @@
                 Copy
               </p>
             </button>
-
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -292,15 +304,16 @@
             </button>
           </div>
         </div>
+
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#FFE3E2] p-3 rounded-xl">
               <img src="./assets/emergency.png" class="h-6 w-6" />
             </div>
-            <button  class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +326,7 @@
             </button>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Women & Child Helpline
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">
@@ -321,7 +334,7 @@
             </p>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               109
             </h1>
             <p
@@ -332,7 +345,7 @@
           </div>
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -341,7 +354,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -350,14 +363,14 @@
           </div>
         </div>
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#FFE3E2] p-3 rounded-xl">
               <img src="./assets/emergency.png" class="h-6 w-6" />
             </div>
-            <button  class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -370,7 +383,7 @@
             </button>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Anti-Corruption Helpline
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">
@@ -378,7 +391,7 @@
             </p>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               106
             </h1>
             <p
@@ -389,7 +402,7 @@
           </div>
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -398,7 +411,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -407,14 +420,14 @@
           </div>
         </div>
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#FFE3E2] p-3 rounded-xl">
               <img src="./assets/emergency.png" class="h-6 w-6" />
             </div>
-            <button  class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -427,7 +440,7 @@
             </button>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Electricity Helpline
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">
@@ -435,7 +448,7 @@
             </p>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               16216
             </h1>
             <p
@@ -446,7 +459,7 @@
           </div>
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -455,7 +468,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -464,14 +477,14 @@
           </div>
         </div>
         <div
-         
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
             <div class="bg-[#FFE3E2] p-3 rounded-xl">
               <img src="./assets/brac.png" class="h-6 w-6" />
             </div>
-            <button  class="cursor-pointer">
+            <button id="heart-btn" class="cursor-pointer">
               <svg
                 class="h-5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -484,14 +497,13 @@
             </button>
           </div>
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Brac Helpline
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">Brac</p>
           </div>
-
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               16445
             </h1>
             <p
@@ -502,7 +514,7 @@
           </div>
           <div class="flex gap-2">
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -511,7 +523,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -519,9 +531,8 @@
             </button>
           </div>
         </div>
-
         <div
-          
+          id="card"
           class="bg-white shadow-md p-4 rounded-xl flex flex-col gap-2"
         >
           <div class="flex items-center justify-between">
@@ -540,18 +551,16 @@
               </svg>
             </button>
           </div>
-
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="title" class="font-bold text-[16px] lg:text-[20px]">
               Bangladesh Railway Helpline
             </h1>
             <p class="text-[12px] lg:text-[16px] text-[#5C5C5C]">
               Bangladesh Railway
             </p>
           </div>
-
           <div>
-            <h1  class="font-bold text-[16px] lg:text-[20px]">
+            <h1 id="number" class="font-bold text-[16px] lg:text-[20px]">
               163
             </h1>
             <p
@@ -561,9 +570,8 @@
             </p>
           </div>
           <div class="flex gap-2">
-
             <button
-              
+              id="copy-btn"
               class="flex justify-center cursor-pointer gap-1 bg-white border-1 border-gray-400 py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/copy.svg" alt="" srcset="" />
@@ -572,7 +580,7 @@
               </p>
             </button>
             <button
-              
+              id="call-btn"
               class="flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 rounded-md items-center text-white w-full"
             >
               <img src="./assets/call.svg" alt="" srcset="" />
@@ -589,17 +597,17 @@
             <img src="./assets/clock.svg" class="h-5 w-5" alt="" />
             <p class="text-[16px]">Call History</p>
           </div>
-
           <button
-            
+            id="clear-btn"
             class="h-10 flex justify-center gap-1 cursor-pointer bg-[#00A63E] py-2 px-4 rounded-full items-center text-white"
           >
             <p class="font-medium lg:text-base text-[12px]">Clear</p>
           </button>
         </div>
-        <div ></div>
+        <div id="history-container"></div>
       </div>
     </main>
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
+  
 </html>
